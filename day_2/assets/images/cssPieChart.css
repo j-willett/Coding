@@ -1,0 +1,29 @@
+table, tr, td {
+  border-collapse: collapse;
+}
+tr {
+  width: 250px;
+  height: 250px
+}
+td {
+  text-align: center;
+  vertical-align: middle;
+  width: 250px;
+  height: 250px;
+}
+.q1red {
+  background-color: red;
+  border-top-left-radius: 100%
+}
+.q2yellow {
+  background-color: yellow;
+  border-top-right-radius: 100%
+}
+.q3blue {
+  background-color: blue;
+  border-bottom-left-radius: 100%
+}
+.q4green {
+  background-color: green;
+  border-bottom-right-radius: 100%
+}
