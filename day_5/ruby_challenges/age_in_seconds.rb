@@ -1,9 +1,7 @@
 puts "Enter your age, and I will convert it to seconds on each planet."
 age = gets.chomp.to_i
-
-seconds = age * 60 * 60 * 24
-
 year = 365.26
+seconds = age * 60 * 60 * 24 * year
 
 mercury = year / 87.97
 venus = year / 224.70

@@ -5,4 +5,5 @@ tip_percent = 0.18
 
 tip = dinner_cost * tip_percent
 
-puts "You should tip #{tip.to_s}0 dollars."
+puts "You should tip #{tip.round(2)} dollars."
+puts "You should tip #{sprintf "%.2f", tip.round(2)}"
