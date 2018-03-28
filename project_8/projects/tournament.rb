@@ -1,9 +1,10 @@
-load "tournament_methods.rb"
+require_relative "tournament_methods"
 
 team_name = []
 qty_of_teams = []
-seeding = {}
-matchups = {}
+seeding_hash = {}
+matchups_hash = {}
+matchups2_hash = matchups_hash
 
 puts menu
 choice = gets.chomp.to_i
@@ -14,24 +15,20 @@ if choice == 1
   number_of_teams.times do |team|
     puts "Enter a team name"
     team_name.push[team] = gets.chomp
-    puts menu
-    choice = gets.chomp.to_i
   end
+  puts menu
+  choice = gets.chomp.to_i
 elsif choice == 2
-  puts seeding
+  puts seeds_for_tournament
+  puts menu
+  choice = gets.chomp.to_i
+elsif choice == 3
+  puts menu
+  choice = gets.chomp.to_i
+elsif choice == 0
+  exit
+else
+  puts "That is not a valid choice, choose again."
+  puts menu
+  choice = gets.chomp.to_i
 end
-
-if choice == 2
-  puts seeding
-
-end
-
-
-
-
-
-
-
-
-
-team_list = team_name

@@ -6,14 +6,14 @@ def menu
   puts "  0) Exit Program"
 end
 
-def seeds
-  number_of_teams.times do |qty|
-    qty_of_teams[qty] = 0
+def seeds_for_tournament
+  number_of_teams.times do
+    qty_of_teams.push[0 += 1]
   end
 end
 
-def seeding(key, value)
+def seeding
   number_of_teams.each do
-    seeding(team_name, qty_of_teams)
+    seeding_hash[]
   end
 end
